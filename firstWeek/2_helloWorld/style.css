@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 60vh;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  font-weight: bolder;
+  font-family: 'Allura', cursive;
+  font-size: 2rem;
+
+  background: #c3b4e5;
+  color: #8257e5;
+}
+
+p {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: #8257e5;
+}
