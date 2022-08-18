@@ -1,0 +1,53 @@
+input {
+  opacity: 0;
+  position: absolute;
+  left: -100px;
+  top: -100px;
+}
+
+input + label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+input + label::before {
+  content: "";
+  width: 2rem;
+  height: 1rem;
+  background-color: hsl(0, 80%, 90%);
+  border-radius: 1rem;
+  transition: background-color 200ms ease-in-out;
+}
+
+input + label::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: .1rem;
+  content: "\2715";
+  font-size: .7rem;
+  width: .9rem;
+  height: .9rem;
+  background-color: hsl(0, 80%, 60%);
+  color: white;
+  border-radius: 1rem;
+  transition: 200ms ease-in-out, transform 200ms ease-in-out;
+}
+
+input:focus + label::before {
+  outline: 1px solid black;
+}
+
+input:checked + label::before {
+  background-color: hsl(100, 70%, 90%);
+}
+
+input:checked + label::after {
+  content: "\2713";
+  transform: translateX(100%);
+  background-color: hsl(100, 70%, 60%);
+}
+
