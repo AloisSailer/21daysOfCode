@@ -51,3 +51,14 @@ input:checked + label::after {
   background-color: hsl(100, 70%, 60%);
 }
 
+input:disabled + label {
+  color: #777;
+}
+
+input:disabled + label::before {
+  background-color: #ccc;
+}
+
+input:disabled + label::after {
+  background-color: #777;
+}
