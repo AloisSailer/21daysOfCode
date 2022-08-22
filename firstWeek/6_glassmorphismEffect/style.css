@@ -78,7 +78,6 @@ body::after {
 }
 
 .container .card .content .logo {
-  position: ;
   bottom: 16rem;
   right: 2rem;
   color: rgba(10, 10, 11, 0.05);
