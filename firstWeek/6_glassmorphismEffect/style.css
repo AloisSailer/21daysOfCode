@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(61, 60, 66);
+  color: #e1e1e6;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#ff008e, #ffcd1e);
+  clip-path: circle(30% at right 70%);
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#007aff, #e83f5b);
+  clip-path: circle(20% at 10% 10%);
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 75rem;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.container .card {
+  position: relative;
+  width: 17.5rem;
+  height: 25rem;
+  margin: 1.875rem;
+  box-shadow: 1.25rem 1.25rem 3.125rem rgba(0, 0, 0, 0.5);
+  border-radius: 0.9375rem;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 0.0625rem solid rgba(255, 255, 255, 0.5);
+  border-left: 0.0625rem solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.container .card .content {
+  padding: 1.25rem;
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.container .card:hover .content {
+  opacity: 1;
+}
+
+.container .card .content .logo {
+  position: ;
+  bottom: 16rem;
+  right: 2rem;
+  color: rgba(10, 10, 11, 0.05);
+  pointer-events: none;
+}
+
+.container .card .content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.container .card .content p {
+  font-size: 1rem;
+  color: #c4c4cc;
+  font-weight: 400;
+}
+
+.container .card .content a {
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  margin-top: 0.9375rem;
+  background: #e1e1e6;
+  color: #09090a;
+  border-radius: 1.25rem;
+  text-decoration: none;
+  font-weight: 400;
+  box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  height: 7.75rem;
+  width: 7.75rem;
+  border-radius: 0.5rem;
+  background: rgb(10, 10, 11);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 5.125rem;
+}

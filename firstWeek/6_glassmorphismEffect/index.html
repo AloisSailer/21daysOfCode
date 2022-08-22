@@ -2,11 +2,55 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Efeito vidro</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-</body>
+  <div class="container">
+    <div class="card">
+      <div class="content">
+        <div class="logo">
+          <img src="./earth.svg" alt="terra">
+        </div>
+        <h2>Conectar</h2>
+        <p>Trilha de conhecimento para o primeiro contato com a programação.</p>
+        <a href="https://app.rocketseat.com.br/discover/trails/conectar" target="_blank">Conecta se agora</a>
+      </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <div class="logo">
+            <img src="./jupiter.svg" alt="jupiter">
+          </div>
+          <h2>Fundamentar</h2>
+          <p>Trilha para aprender os fundamentos da programação web.</p>
+          <a href="https://app.rocketseat.com.br/discover/trails/fundamentar" target="_blank">Conecta se agora</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <div class="logo">
+            <img src="./galaxy.svg" alt="galaxy">
+          </div>
+          <h2>Especializar</h2>
+          <p>Trilha de conhecimento para  expandir seu contato com soluções da programação web.</p>
+          <a href="https://app.rocketseat.com.br/discover/trails/especializar" target="_blank">Conecta se agora</a>
+        </div>
+      </div>
+    </div>
+    <script src="./vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".card"),{
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+      });
+    </script>
+  </body>
 </html>
