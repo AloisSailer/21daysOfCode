@@ -68,6 +68,9 @@ body::after {
   text-align: center;
   opacity: 0;
   transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container .card:hover .content {
