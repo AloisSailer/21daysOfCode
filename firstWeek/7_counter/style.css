@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(#1a79de, #05376e);
+  color: #f1f1f1;
+  display: grid;
+  place-items: center;
+}
+
+section {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+p {
+  font-size: 6rem;
+}
+
+button {
+  background: rgba(26, 121, 222, 0.9);
+  width: 5rem;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.8rem;
+  cursor: pointer;
+}
