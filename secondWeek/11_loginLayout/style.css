@@ -1,0 +1,121 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --primary-light-hsl: 200, 100%, 91%;
+  --primary-hsl: 200, 100%, 50%;
+  --primary-dark-hsl: 200, 100%, 6%;
+  --white: #fff;
+  --success-hsl: 100, 60%, 50%;
+  --error-hsl: 0, 60%, 50%;
+}
+
+.full-screen-container {
+  background-image: url("https://img.theculturetrip.com/wp-content/uploads/2016/08/1024px-enseada_de_botafogo_e_po_de_acar.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  --color: hsl(var(--primary-dark-hsl), .7);
+  background-color: var(--color);
+  box-shadow: 0 0 0.94px 0 var(--color);
+  padding: 2.5rem 1.875rem;
+  width: 80%;
+  max-width: 37.5rem;
+  border-radius: 1.25rem;
+}
+
+.login-title {
+  margin: 0;
+  color: var(--white);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.44rem;
+}
+
+.input-group label {
+  color: var(--white);
+  font-weight: lighter;
+}
+
+.input-group input {
+  font-size: 1.25rem;
+  padding: .5em;
+  background-color: hsl(var(--primary-light-hsl), .3);
+  border: none;
+  outline: none;
+  border-radius: .25em;
+  color: var(--white);
+  font-weight: lighter;
+}
+
+.input-group.success input {
+  box-shadow: 0 0 0 2px hsl(var(--success-hsl));
+}
+
+.input-group.error input {
+  box-shadow: 0 0 0 2px hsl(var(--error-hsl));
+}
+
+.input-group input:focus {
+  box-shadow: 0 0 0 2px var(--primary-hsl);
+}
+
+.input-group .msg {
+  display: none;
+  font-size: .75rem;
+}
+
+.input-group.success .msg,
+.input-group.error .msg {
+  display: block;
+}
+
+.input-group.error .msg {
+  color: hsl(var(--error-hsl));
+}
+
+.input-group.success .msg {
+  color: hsl(var(--success-hsl));
+}
+
+.login-button {
+  padding: .5em 1em;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: var(--white);
+  background-color: hsl(var(--primary-hsl), .25);
+  border: 1px solid hsl(var(--primary-hsl));
+  border-radius: .25em;
+  outline: none;
+  cursor: pointer;
+}
+
+.login-button:hover,
+.login-button:focus {
+  background-color: hsl(var(--primary-hsl), .4);
+}
