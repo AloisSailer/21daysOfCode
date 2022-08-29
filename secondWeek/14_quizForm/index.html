@@ -4,10 +4,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Quiz</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  
+  <div class="container">
+    <div id="question-container" class="hide">
+      <div id="question">Pergunta</div>
+      <div id="answer-buttons" class="btn-grid">
+        <button class="btn">Resposta 1</button>
+        <button class="btn">Resposta 2</button>
+        <button class="btn">Resposta 3</button>
+        <button class="btn">Resposta 4</button>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="start-btn" class="start-btn btn">Iniciar</button>
+      <button id="next-btn" class="next-btn btn hide">Próxima</button>
+    </div>
+  </div>
 </body>
+  <script src="./main.js"></script>
 </html>
+
+<!-- https://www.youtube.com/watch?v=riDzcEQbX6k -->
