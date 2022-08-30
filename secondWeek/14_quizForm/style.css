@@ -1,6 +1,6 @@
 *, *::before, *::after {
   box-sizing: border-box;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 :root {
@@ -38,6 +38,10 @@ body.wrong {
   box-shadow: 0 0 10px 2px;
 }
 
+#question {
+  font-weight: bold;
+}
+
 .btn-grid {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -57,4 +61,29 @@ body.wrong {
 
 .btn:hover{
   border-color: #000;
+}
+
+.btn.correct {
+  --hue: var(--hue-correct);
+  color: #000;
+}
+
+.btn.wrong {
+  --hue: var(--hue-wrong);
+}
+
+.start-btn, .next-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
 }
