@@ -11,7 +11,7 @@ nextButton.addEventListener('click', () => {
   currentQuestionIndex++
   setNextQuestion()
 })
-
+ 
 function startGame() {
   startButton.classList.add('hide')
   shuffledQuestions = questions.sort(() => Math.random() - .5)
@@ -27,7 +27,7 @@ function setNextQuestion() {
 
 function showQuestion(question) {
   questionElement.innerText = question.question
-  question.answers.forEach(answer => {
+  question.answers.forEach(answers => {
     const button = document.createElement('button')
     button.innerText = answer.text
     button.classList.add('btn')
@@ -35,7 +35,7 @@ function showQuestion(question) {
       button.dataset.correct = answer.correct
     }
     button.addEventListener('click', selectAnswer)
-    answerButtonsElement.appendChild(button)
+    answerButtonElement.appendChild(button)
   })
 }
 
@@ -43,7 +43,8 @@ function resetState() {
   clearStatusClass(document.body)
   nextButton.classList.add('hide')
   while (answerButtonsElement.firstChild) {
-    answerButtonsElement.removeChild(answerButtonsElement.firstChild)
+    answerButtonsElement.removeChild
+    (answerButtonsElement.firstChild)
   }
 }
 
@@ -54,7 +55,7 @@ function selectAnswer(e) {
   Array.from(answerButtonsElement.children).forEach(button => {
     setStatusClass(button, button.dataset.correct)
   })
-  
+
   if (shuffledQuestions.length > currentQuestionIndex + 1) {
     nextButton.classList.remove('hide')
   } else {
@@ -79,35 +80,35 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: 'Quanto é 2 + 2?',
+    question: 'What is 2 + 2?',
     answers: [
       { text: '4', correct: true },
       { text: '22', correct: false }
     ]
   },
   {
-    question: 'Quais seções você deve ter no seu Portfólio?',
+    question: 'Who is the best YouTuber?',
     answers: [
-      { text: 'Header', correct: true },
-      { text: 'Sobre você', correct: true },
-      { text: 'Seus projetos', correct: true },
-      { text: 'Contatos', correct: true }
+      { text: 'Web Dev Simplified', correct: true },
+      { text: 'Traversy Media', correct: true },
+      { text: 'Dev Ed', correct: true },
+      { text: 'Fun Fun Function', correct: true }
     ]
   },
   {
-    question: 'Hábitos para se tornar um bom programador',
+    question: 'Is web development fun?',
     answers: [
-      { text: 'Sem planejamento', correct: false },
-      { text: 'Ter foco', correct: true },
-      { text: 'Copiar código pronto', correct: false },
-      { text: 'Não documentar soluções', correct: false }
+      { text: 'Kinda', correct: false },
+      { text: 'YES!!!', correct: true },
+      { text: 'Um no', correct: false },
+      { text: 'IDK', correct: false }
     ]
   },
   {
-    question: 'O que é SEO?',
+    question: 'What is 4 * 2?',
     answers: [
-      { text: 'Shief Executive Officer', correct: false },
-      { text: 'Search Engine Optimization', correct: true }
+      { text: '6', correct: false },
+      { text: '8', correct: true }
     ]
   }
 ]
