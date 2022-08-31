@@ -4,26 +4,26 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ecommerce</title>
+  <title>Corre e-commerce</title>
   <link rel="stylesheet" href="./assets/css/style.css">
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-  <header class="1-header" id="header">
+  <header class="header1" id="header">
     <nav class="nav bd-grid">
       <div class="nav__toggle" id="nav-toggle">
         <i class="bx bxs-grid"></i>
       </div>
 
-      <a href="#" class="nav__logo">Alois</a>
+      <a href="#" class="nav__logo">Corre</a>
 
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
           <li class="nav__item"><a href="#featured" class="nav__link">Featured</a></li>
           <li class="nav__item"><a href="#women" class="nav__link">Women</a></li>
           <li class="nav__item"><a href="#new" class="nav__link">New</a></li>
-          <li class="nav__item"><a href="#home" class="nav__link">Shop</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Shop</a></li>
         </ul>
       </div>
 
@@ -31,14 +31,75 @@
         <i class="bx bx-shopping-bag"></i>
       </div>
     </nav>
-
   </header>
-  
 
-        <!--===== HEADER =====-->
-        
+  <main class="main1">
+    <section class="home" id="home">
+      <div class="home__container bd-grid">
+        <div class="home__sneaker">
+          <div class="home__shape"></div>
+          <img src="./assets/img/imghome.png" alt="home" class="home__img">
+        </div>
 
-        <main class="l-main">
+        <div class="home__data">
+          <span class="home__new">New in</span>
+          <h1 class="home__title">YEEZY Boost <br> SPLY - 350</h1>
+          <p class="home__description">Explore the new collections of sneakers</p>
+          <a href="#" class="button">Explore now</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured section" id="featured">
+      <h2 class="section-title">FEATURED</h2>
+      <div class="featured__container bd-grid">
+        <article class="sneaker">
+          <div class="sneaker__sale">Sale</div>
+          <img src="./assets/img/featured1.png" alt="sneaker" class="sneaker__img">
+          <span class="sneaker__name">Jordan</span>
+          <span class="sneaker__preci">R$ 149,90</span>
+          <a href="#" class="button-light">Add to Carrinho <i class="bx bx-right-arrow-alt button-icon"></i></a>
+        </article>
+        <article class="sneaker">
+          <div class="sneaker__sale">Sale</div>
+          <img src="./assets/img/featured2.png" alt="free" class="sneaker__img">
+          <span class="sneaker__name">Free</span>
+          <span class="sneaker__preci">R$ 189,90</span>
+          <a href="#" class="button-light">Add to Carrinho <i class="bx bx-right-arrow-alt button-icon"></i></a>
+        </article>
+        <article class="sneaker">
+          <div class="sneaker__sale">Sale</div>
+          <img src="./assets/img/featured3.png" alt="Free RN" class="sneaker__img">
+          <span class="sneaker__name">Free RN</span>
+          <span class="sneaker__preci">R$ 199,90</span>
+          <a href="#" class="button-light">Add to Carrinho <i class="bx bx-right-arrow-alt button-icon"></i></a>
+        </article>
+      </div>
+    </section>
+    <section class="collection section">
+      <div class="collection__container bd-grid">
+        <div class="collection__card">
+          <div class="collection__data">
+            <h3 class="collection__name">Run</h3>
+            <p class="collection__description">New Collection 2022</p>
+            <a href="#" class="button-light">Compre agora <i class="bx bx-right-arrow-alt button-icon"></i></a>
+          </div>
+
+          <img src="./assets/img/collection1.png" alt="coleção" class="collection__img">
+        </div>
+
+        <div class="collection__card">
+          <div class="collection__data">
+            <h3 class="collection__name">Faster</h3>
+            <p class="collection__description">New Collection 2022</p>
+            <a href="#" class="button-light">Compre agora <i class="bx bx-right-arrow-alt button-icon"></i></a>
+          </div>
+
+          <img src="./assets/img/collection2.png" alt="coleção" class="collection__img">
+        </div>
+      </div>
+
+    </section>
           <!--===== HOME =====-->
           
 

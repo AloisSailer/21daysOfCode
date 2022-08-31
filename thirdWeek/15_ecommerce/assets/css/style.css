@@ -113,7 +113,7 @@ img {
   margin-right: var(--mb-2);
 }
 
-.1-header {
+.header1 {
   width: 100%;
   position: fixed;
   top: 0;
@@ -135,8 +135,9 @@ img {
     top: var(--header-height);
     left: -1000%;
     width: 70%;
+    height: 100vh;
     padding: 2rem;
-    background-color: #fff;
+    background-color: var(--white-color);
     transition: .5s;
   }
 }
@@ -156,4 +157,156 @@ img {
 
 .show {
   left: 0;
+}
+
+.active {
+  position: relative;
+}
+
+.active::before {
+  content: '';
+  position: absolute;
+  bottom: -.5rem;
+  left: 45%;
+  width: 4px;
+  height: 4px;
+  background-color: var(--dark-color);
+  border-radius: 50%;
+}
+
+.scroll-header {
+  background-color: var(--white-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
+
+.home {
+  background-color: var(--dark-color-lighten);
+  overflow: hidden;
+}
+
+.home__container {
+  height: calc(100vh - var(--header-height));
+}
+
+.home__sneaker {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__shape {
+  width: 220px;
+  height: 220px;
+  background-color: var(--dark-color);
+  border-radius: 50%;
+}
+
+.home__img {
+  position: absolute;
+  top: 1.5rem;
+  max-width: initial;
+  width: 275px;
+  transform: var(--rotate-img);
+}
+
+.home__new {
+  display: block;
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: var(--mb-2);
+}
+
+.home__title {
+  font-size: var(--bigger-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.home__description {
+  margin-bottom: var(--mb-6);
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  padding: 1.125rem 2rem;
+  font-weight: var(--font-medium);
+  border-radius: .5rem;
+  transition: .3s;
+}
+
+.button:hover {
+  transform: translateY(-.25rem);
+}
+
+.button-light {
+  display: inline-block;
+  color: var(--dark-color);
+  font-weight: var(--font-bold);
+  align-items: center;
+}
+
+.button-icon {
+  font-size: 1.25rem;
+  margin-left: var(--mb-1);
+  transition: .3s;
+}
+
+.button-light:hover .button-icon {
+  transform: translateX(.25rem);
+}
+
+.featured__container {
+  row-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.sneaker {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--dark-color-lighten);
+  border-radius: .5rem;
+  transition: .3rem;
+}
+
+.sneaker__sale {
+  position: absolute;
+  left: .5rem;
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  padding: .25rem .5rem;
+  border-radius: .25rem;
+  font-size: var(--h2-font-size);
+  transform: rotate(-90deg);
+  letter-spacing: .1rem;
+}
+
+.sneaker__img {
+  width: 220px;
+  margin-top: var(--mb-3);
+  margin-bottom: var(--mb-6);
+  transform: var(--rotate-img);
+  filter: drop-shadow(0 12px 8px rgba(0, 0, 0, .2));
+}
+
+.sneaker__name, .sneaker__preci {
+  font-size: var(--h2-font-size);
+  letter-spacing: .1rem;
+  font-weight: var(--font-semi-bold);
+}
+
+.sneaker__name {
+  margin-bottom: var(--mb-1);
+}
+
+.sneaker__preci {
+  margin-bottom: var(--mb-4);
+}
+
+.sneaker:hover {
+  transform: translateY(-.5rem);
 }
