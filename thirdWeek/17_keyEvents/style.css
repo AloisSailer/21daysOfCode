@@ -131,7 +131,8 @@ body.active {
   transition: .2s;
 }
 
-.toogle_circle.active {
+
+.toggle_circle.active {
   left: 60%;
   background-color: #fff;
 }
@@ -147,15 +148,18 @@ body.active {
 
 .text.active {
   background-color: #2b2b2b;
+  color: #fff;
 }
 
 .keys.keys_night.active {
   background-color: #fff;
   color: #333;
+  transition: .2s;
 }
 
 .keys.keys_night.remove {
   animation: keys_night_animation 0.5 forwards;
+  transition: .2s;
 }
 
 @keyframes keys_night_animation {
